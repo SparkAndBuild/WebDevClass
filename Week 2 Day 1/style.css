@@ -1,0 +1,36 @@
+/* Element selector */
+h1{
+    font-size: 200%;
+    color: orangered;
+}
+
+/* ID selector */
+#microsoft-blue{
+    color: blue;
+}
+
+/* Class selector */
+.shrek{
+    color: greenyellow;
+    font-size: 150%;
+}
+
+.brand-font{
+    font-family: 'Verdana';
+}
+
+.brand-font-2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.google-red{
+    color: red;
+}
+
+/* Universal selector */
+*{
+    text-align: center;
+    color: gold;
+    background-color: black;
+}

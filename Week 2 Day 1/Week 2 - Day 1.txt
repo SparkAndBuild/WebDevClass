@@ -1,0 +1,11 @@
+Topic: 1 - Defining CSS in HTML
+1. Inline CSS - where you have the styling within the code
+2. Internal - define the styling within the head (style)
+3. External CSS - define the styling in a separate CSS file
+
+Topic: 3 - CSS Selectors
+a. Element selector - selects HTML elements based on the HTML name
+b. ID selector - select id attribute of the specific element
+c. Class selector - selects based on the class attribute
+d. Multiple selector - multiple classes
+e. Universal selector - selects all the elements on that page
