@@ -1,0 +1,32 @@
+// O B J E C T S
+// CREATING
+
+
+// ACCESSING ITEMS
+
+
+// DELETING ITEMS
+
+
+// NESTED OBJECTS
+
+
+// L O O P S
+// FOR LOOP 
+
+
+
+// FOR IN LOOP
+
+
+// WHILE LOOP
+
+
+
+// DO WHILE LOOP
+
+
+// BREAK 
+
+
+// CONTINUE
