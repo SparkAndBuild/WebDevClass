@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+        <h2 class="cinzel-800 shopName" id="shopName">SPARK AND BUILD SHOP</h2>
+        <p class="lora-500 shopDesc">Spark with the new merchant.</p>
+    </div>
+    <div id="data">
+
+    </div>
+    <script>
+        document.getElementById("shopName").addEventListener('click',()=>{
+            window.location.href = "http://localhost:5500/JS/Projects/Test"
+        })
+      let id = window.location.href.substring(51);
+      fetch("https://fakestoreapi.com/products/" + id)
+        .then((response) => response.json())
+        .then((data) => {
+          let product_id = document.createElement("h3");
+          let product_title = document.createElement("h3");
+          let product_price = document.createElement("h5");
+          let product_description = document.createElement("p");
+          let product_category = document.createElement("p");
+          let product_image = document.createElement("img");
+          let product_rate = document.createElement("p");
+          let product_count = document.createElement("p");
+
+          product_title.className = "product_title cinzel-500";
+          product_price.className = "product_price";
+          product_description.className = "product_description lora-500";
+          product_category.className = "product_category";
+          product_image.className = "product_image";
+          product_rate.className = "product_rate  lora-700";
+          product_count.className = "product_count lora-700";
+          product_title.innerHTML = data.title;
+          product_price.innerHTML = "USD: " + data.price;
+          product_description.appendChild(
+            document.createTextNode(data.description)
+          );
+          product_category.appendChild(document.createTextNode(data.category));
+          product_image.src = data.image;
+          product_rate.appendChild(
+            document.createTextNode("Rate: " + data.rating.rate)
+          );
+          product_count.appendChild(
+            document.createTextNode("Votes: " + data.rating.count)
+          );
+
+          let mother = document.getElementById("data");
+          let product_div = document.createElement("div");
+          let product_rating = document.createElement("div");
+          let image_div = document.createElement("div");
+          product_div.className = "product_div";
+          product_div.id = "product_div";
+          product_rating.className = "product_rating";
+          image_div.className = "image_div";
+          product_div.appendChild(product_title);
+          image_div.appendChild(product_image);
+          product_div.appendChild(product_description);
+          product_div.appendChild(product_price);
+          product_div.appendChild(product_category);
+          product_rating.appendChild(product_rate);
+          product_rating.appendChild(product_count);
+          
+          product_div.appendChild(product_rating);
+          mother.appendChild(image_div);
+          mother.appendChild(product_div);
+        });
+    </script>
+  </body>
+</html>
