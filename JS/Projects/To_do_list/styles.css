@@ -1,0 +1,125 @@
+.cinzel-500 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cinzel-800 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.lora-500 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.lora-700 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.shopName {
+  text-align: center;
+  font-size: 50px;
+  line-height: 0%;
+}
+.shopDesc {
+  text-align: center;
+  line-height: 0%;
+}
+
+input {
+  border: 0px;
+  border-bottom: 2px solid;
+  outline: 0px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  margin: 10px;
+  width: 100%;
+}
+
+textarea {
+  border: 2px solid;
+  outline: 0px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  margin: 10px;
+  width: 100%;
+}
+
+.inputs {
+  margin: auto;
+  width: 50%;
+}
+.input_div {
+  display: flex;
+  justify-content: center;
+}
+.submit {
+  margin: auto;
+  font-weight: 600;
+  background-color: rgb(48, 48, 250);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  border: 0px;
+  color: white;
+}
+.submit:hover {
+  background-color: rgb(5, 5, 216);
+  cursor: pointer;
+}
+
+.list {
+  padding-top: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+.container {
+  background-color: rgb(200, 207, 207);
+}
+
+.title_div {
+  background-color: rgb(6, 185, 185);
+  padding: 1px;
+  font-size: 20px;
+  line-height: 0px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete_btn {
+  margin: 5px;
+  background-color: rgb(241, 69, 69);
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+.edit_btn {
+  margin: 5px;
+  background-color: rgb(86, 241, 69);
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+.description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button_div{
+  display: flex;
+}
